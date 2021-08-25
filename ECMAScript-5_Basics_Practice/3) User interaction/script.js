@@ -1,2 +1,2 @@
-var userName = prompt ("Your name?", "");
+var userName = prompt("Your name?", "");
 alert("Hello " + userName + "!");
