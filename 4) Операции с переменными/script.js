@@ -40,6 +40,6 @@ console.log(result);
 */
 
 var num = 342; 
-var result = num > 99 && num % 2 == 0;
+var result = num > 99 && num < 1000 && num % 2 == 0;
 
 console.log(result);
