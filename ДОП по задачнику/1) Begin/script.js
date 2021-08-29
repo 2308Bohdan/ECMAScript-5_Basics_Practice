@@ -214,11 +214,11 @@ var numX2 = 16;
 var numY2 = -7;
 var numX3 = 2;
 var numY3 = 3;
-//Объединил только  из-за того что задачей ранее расписывал:
+//Объединил только  из-за того что задачей ранее разделил, что конечно удобнее:
 var lenghtA = Math.sqrt((Math.pow((numX2 - numX1), 2) + Math.pow((numY2 - numY1), 2)));
 var lenghtB = Math.sqrt((Math.pow((numX3 - numX1), 2) + Math.pow((numY3 - numY1), 2)));
 var lenghtC = Math.sqrt((Math.pow((numX3 - numX2), 2) + Math.pow((numY3 - numY2), 2)));
 var perimeterP = (lenghtA + lenghtB + lenghtC) / 2;
 var partGeron = perimeterP * (perimeterP - lenghtA) * (perimeterP - lenghtB) * (perimeterP - lenghtC);
 var areaS = Math.sqrt(partGeron);
-console.log(parseInt(areaS)); //Стоит ли делать целам числом?
+console.log(parseInt(areaS)); //Стоит ли делать целым числом?
