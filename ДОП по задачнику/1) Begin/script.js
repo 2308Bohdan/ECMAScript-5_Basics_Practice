@@ -204,3 +204,21 @@ var squareDiffX = Math.pow((numX2 - numX1), 2);
 var squareDiffY = Math.pow((numY2 - numY1), 2);
 var distance = Math.sqrt((squareDiffX + squareDiffY));
 console.log(distance);
+
+/*21)Даны координаты трех вершин треугольника: (x1, y1), (x2, y2), (x3, y3).
+Найти его периметр и площадь, используя формулу для расстояния между двумя точками на плоскости (см. задание Begin20). Для нахождения
+площади треугольника со сторонами a, b, c использовать формулу Герона*/
+var numX1 = 25;
+var numY1 = 30;
+var numX2 = 16;
+var numY2 = -7;
+var numX3 = 2;
+var numY3 = 3;
+//Объединил только  из-за того что задачей ранее расписывал:
+var lenghtA = Math.sqrt((Math.pow((numX2 - numX1), 2) + Math.pow((numY2 - numY1), 2)));
+var lenghtB = Math.sqrt((Math.pow((numX3 - numX1), 2) + Math.pow((numY3 - numY1), 2)));
+var lenghtC = Math.sqrt((Math.pow((numX3 - numX2), 2) + Math.pow((numY3 - numY2), 2)));
+var perimeterP = (lenghtA + lenghtB + lenghtC) / 2;
+var partGeron = perimeterP * (perimeterP - lenghtA) * (perimeterP - lenghtB) * (perimeterP - lenghtC);
+var areaS = Math.sqrt(partGeron);
+console.log(parseInt(areaS)); //Стоит ли делать целам числом?
