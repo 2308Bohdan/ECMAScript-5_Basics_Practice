@@ -137,7 +137,7 @@ console.log(squareS3);
 В качестве значения π использовать 3.14.*/
 var lenghtL = 520;
 var PI = 3.14;
-var radiusR = lenght / (2 * PI);
+var radiusR = lenghtL / (2 * PI);
 var squareS = PI * Math.pow(radiusR, 2);
 console.log(radiusR);
 console.log(squareS);
