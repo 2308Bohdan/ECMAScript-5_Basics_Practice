@@ -78,7 +78,7 @@ function digitN(k, n) {
 		secondCoeff *= 10;
 		if (res < 1) {
 			res = -1;
-			break
+			break;
 		}
 	}
 	return res;
