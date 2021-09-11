@@ -76,17 +76,15 @@ arr[arr.length - 1](); // в консоль должно быть выведен
 
 
 function satana() {
-    var arr = [];
-
-    for (var i = 0; i <= 2; i++) {
-        arr[i] = function(param) {
-            return function () {
+	var arr = [];
+	for (var i = 0; i <= 2; i++) {
+		arr[i] = function(param) {
+			return function () {
 				console.log(param);
 			};
-        } (i);
-    }
-
-    return arr;
+		} (i);
+	}
+	return arr;
 }
 
 var kokos = satana();
