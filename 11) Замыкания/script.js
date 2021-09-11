@@ -83,9 +83,9 @@ function satana() {
             console.log(param);
          };
       } (i);
-   }
+   };
    return arr;
-}
+};
 
 var kokos = satana();
 kokos[0]();
