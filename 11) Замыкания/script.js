@@ -74,7 +74,7 @@ arr[arr.length - 1](); // в консоль должно быть выведен
 изменений, в консоль будет выведено два раза число 3. Используя механизм 
 замыкания внесите в код изменения, чтобы в консоль вывелись число 0 и число 2.*/
 
-function consleArr() {
+function consoleArr() {
     var arr = [];
 
     for (var i = 0; i <= 2; i++) {
@@ -88,6 +88,6 @@ function consleArr() {
     return arr;
 }
 
-var example = consleArr();
+var example = consoleArr();
 example[0]();
 example[example.length - 1]();
